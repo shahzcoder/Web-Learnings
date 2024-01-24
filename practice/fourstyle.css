@@ -1,0 +1,31 @@
+ul{
+    background-color:greenyellow;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a{  
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style-type: none;
+}
+
+#outer{
+    height: 400px;
+    width: 400px;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#center{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    
+}

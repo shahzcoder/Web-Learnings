@@ -1,0 +1,45 @@
+/* div{
+    height: 100px;
+    width: 200px;
+    background-color: pink;
+    border: 5px dotted black;
+    text-align: right;
+} */
+
+ /* --------------------------- BOX MODEL IN CSS ----------------------------- */
+
+h1{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    border: 5px solid black;
+    padding: 10px;
+    margin:  10px;
+    text-align: center;
+}
+div{
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    border: 5px solid black;
+    border-radius: 10px; /* if set the radius 50% it will create circle radius */
+    padding: 15px;
+    /* padding: 15px,15px,15px,15px; this padding is clockwise -> top| right | bottom | left */
+    margin: 20px; 
+    /* same clockwise format is followed for margin on all sides */
+    
+}
+#inline{
+    display: inline; 
+    background-color: skyblue; /* not allow top and bottom margin and height, width of content. */
+}
+#block{
+    display: block;
+    background-color: silver ; 
+}
+#inline-block{
+    margin: 20px;
+    padding: 20px;
+    background-color: chartreuse;
+    display: inline-block; /*this porperty allow to set margin padding with inline display*/
+}

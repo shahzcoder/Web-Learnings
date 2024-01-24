@@ -1,0 +1,47 @@
+/* in CSS code works from top to bottom. if color red applied first in universal selector. after that in 2nd selector downward it will follow that code(color) */
+
+* { /* this is universal selector. set style on all things*/
+    background-color: rgba(160, 249, 219, 0.806); /* 4th is alpha called opacity */
+}
+
+h1{   /* h1 is a element selector here.*/
+    color: green; /*Used to set the color of foreground(things we can see in front like text,link button*/
+}
+
+.btn{ /* this is class selector */ 
+    /*background-color property used to color background.  */
+    /* background-color: rgb(255, 7, 7); color by rbg values */
+    background-color: #ffff00; /*using hex color system*/
+}
+
+#paragraph{ /*this is id selector. can not give same id to 
+    multiple elements. use class selector for that purpose*/
+
+    background-color: aqua;
+}
+
+/*------------------- Text Properties in CSS -----------------------*/
+h2{
+    text-align: center;
+    text-decoration:solid purple underline;
+}
+
+#TextAlign{  /* by default left, other alignments are right,center, justify. this property follow the parent alignment style */
+    text-align:right;
+    text-align: start; /* it means right*/
+    text-align: end;   /* it means left */
+    font-weight: 600;  /*other are bold,bolder,lighter etc */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* fall back mechanism it use next font that why use font family */
+}
+
+a{
+    text-decoration: none;
+}
+
+/*--------------------- Units in CSS ------------------*/
+/* Aboulute Units = Widely used pixels 96px = 1 inch */
+.units{
+    font-size: 20px;
+    line-height: 16px; /*spacing between lines */
+    text-transform:capitalize ; /* like capitilize the fisrt letters of words in text */
+}

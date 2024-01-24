@@ -1,0 +1,81 @@
+/* ------------------ Relative Units in CSS --------------------- */
+/* percentage ->used to define sixe as relevant to the parent object  */
+/* Em ->used as relative to parent specially text properties and 1em is equal to parent size.  */
+/* Rem-> root em means follow the root size(html tag).     */
+/* other units are vh and vw -> viewport height nad width that is 1% of the browser height and width */
+
+#box1{
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    font-size: 10px;
+    margin-bottom: 50px;
+
+}
+#box2{
+    height:50px;
+    /* width: 40%; */
+     /* 40% of parent box1 width */
+    background-color: red;
+    margin-left: 20px;
+    font-size: 2em;/* here 2em means 20px */
+    /* width: 5em;  */
+    /* now width is fontsize x 5 =100px, here it consider font-size for width. */
+    width: 5rem ; /* 5 x 16(font size in html body */
+}
+/*------------- Position Properties --------------- */
+
+.position{
+    height: 100px;
+    width: 100px;
+    background-color:aqua ;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+#B1{
+    position: static; /*by default position - no effect of top,bottom,right.left and z-index properties*/
+}
+#B2{
+    position: relative; /* it means relative to current position of itself. */
+    top: 10px; /* shift from top to bottom. */
+    left: 10px; /* shift from left to right. Similar cases for right and bottom position properties */
+    z-index: 1;
+}
+#B3{
+    position:absolute; /* positioned relative to the closest non-static positioned ancestor. like in this case incestor is body tag as this div is in body.*/
+    top:10px; /* positioned from top of page. */
+    left:150px; /* positioned from left of page. */ 
+}
+#B4{
+    position:fixed ; /* positioned relative to browser */
+    top: 10px;
+    right: 10px;    
+}
+#B5{
+    position: sticky;
+    top: 10px;
+    z-index: -1;
+}
+
+/* <!---------------------- Z-Index in CSS ------------------------> */
+    /* exmaple mentioned in box2 nad box5 */
+/* z-index -> decides the stack level of elements. like Box5 created after box2 overlaps the Box2 by default z-index:0. this can be changed by z-index  */
+/* if z-index is poisitve and greater than other box. it will placed above. if negative z-index it will place below the already positioned box */
+
+/*------------------- Background Image Property ---------------- */
+.image{
+    height: 200px;
+    width: 300px;
+    background-image: url(car.jpg);
+    background-size: cover;
+    display:inline-block;
+}
+.imagetwo{
+    height: 300px;
+    width: 300px;
+    background-image: url(bmw.jpg);
+    background-size: cover;
+    display:inline-block;
+}
+

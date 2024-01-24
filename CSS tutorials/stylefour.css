@@ -1,0 +1,60 @@
+body{
+    text-align: center;
+}
+
+div{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    border: 2px solid black;
+}
+
+#container{
+    height: 300px; /* if change the height 100px the flex-items will out of the container because of flex item content.*/
+    width: 800px;  
+    display: flex; 
+    /* justify-content: is alignment along the main axis. flex-start all items to left. "flex-end:all items to right". "center:all items to center"
+    space-around: space around the items in container. ->space-between and space-evenly are also used.*/
+    justify-content:space-between;
+    
+    flex-direction: column;
+    /* main and cross axis can change accordingly. if flex direction row or row reverse -> main-axis is horizontal(x-axis).
+    if flex direction column or column reverse -> main axis is vertical(y-axis). cross axis horizontal.
+     items try to arrange with the flex container height until the content of the flex items allows it. */
+    /* sets how flex items are placed in flex containers along axis and direction. By default it is row:left to right */
+    /* flex-direction: row;  */
+    /* row-reverse: this direction place items from right to left on main axis. it means box1 will be in right side*/
+    /* flex-direction: row-reverse;  */
+    /* flex direction: column -> place flex items top to bottom on main axis. */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+     /* it place flex items from reverse order like box5 on top and box1 on bottom  */
+    
+}
+
+#Box1{
+    background-color: brown;
+}
+
+#Box2{
+    background-color: green;
+}
+
+#Box3{
+    background-color:gold;
+}
+
+#Box4{
+    background-color:purple;
+}
+
+#Box5{
+    background-color: pink;
+}
+
+@media (max-width:600px) {
+    div{
+        background-color: pink;
+    }   
+}
+
