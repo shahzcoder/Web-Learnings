@@ -1,0 +1,63 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(100, 97, 97, 0.17);
+}
+
+.card{
+    height: 350px;
+    width: 250px;
+    background-color:rgb(237, 244, 247);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.cardbody{
+    background-color: white;
+    padding: 5px;
+    height: 330px;
+    width: 330px;
+    border-radius: 10px;
+
+}
+
+.image{
+    background-image: url("car.jpg");
+    background-size: cover;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.buttons{
+    margin: 5px;
+}
+
+#btn{
+    background-color: white;
+    color: gray;
+    border: 1px gray;
+    height: 12px;
+    font-size: 10px;
+}
+
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#info{
+    font-size: 12px ;
+    font-weight: 500;
+    color:rgb(120, 117, 117);   
+}
+#info-btn{
+    border-radius: 10px;
+    height: 23px;
+    border: none;
+    background-color:rgba(157, 203, 225, 0.342) ;
+    color: rgb(16, 150, 233);
+    font-weight: 500;
+    font-size: 10px;
+    margin-left: 85px;
+
+}
