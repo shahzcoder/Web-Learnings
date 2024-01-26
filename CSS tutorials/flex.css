@@ -1,0 +1,28 @@
+.container{
+    height: 100vh;
+    border: 2px solid black;
+    display: flex;
+    /* flex-direction: column; justify content and flex items depends on flex direction. 
+    main axis and cross axis also depends on it. if its column then main axis is horizontal and vice versa. */
+    justify-content: center;  /*apply on main axis. this property is applied to whole container*/
+    /* align-items: center;   */
+    /* align item is applied on 1 line only. apply on cross axis */
+    align-content: flex-start; /* applied on multiple lines like in case of flex-wrap. */
+    flex-flow: row wrap; /* shortcut for flex direction and wraping. */
+    gap: 20px; /* all side same gap b/w items. can also applied separately at row and column: row-gap etc */ 
+}
+
+.items{
+    background-color: blueviolet;
+    height: 80px;
+    width: 60px;
+    /* margin: 4px; */
+    border: 2px solid black;
+    /* align-self: center; it over rides the align items. */
+    flex-shrink: 1;
+}
+
+.order1{
+    order: -1; /* by using this property we can set priority for item. higher order come at  end and vice versa. */
+    flex-grow: 1;
+}
