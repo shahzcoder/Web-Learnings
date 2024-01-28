@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid CSS</title>
+    <style>
+        .container{
+            border: 2px solid orange;
+            display: grid;
+            grid-template-columns:[first] 120px [second] 100px [third];
+            grid-template-rows: [firstr] 120px [secondr] 100px [thirdr] ;
+        }
+
+        .items{
+            border: 2px solid green;
+            height: 55px;
+            width: 55px;
+        }
+
+        .item-4{
+            grid-row: 1/thirdr;
+            grid-column: 1/second;
+        }
+
+        /* .item-1{
+            grid-row: 1/2;     /* overlaps with cell-4 */   
+            /* grid-column: 1/2; */
+        /* } */ 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item-1">Box1</div>
+        <div class="items">Box2</div>
+        <div class="items">Box3</div>
+        <div class="items item-4">Box4</div>
+        <div class="items">Box5</div>
+
+    </div>
+</body>
+</html>
